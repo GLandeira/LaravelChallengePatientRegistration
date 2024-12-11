@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
+use App\Events\PatientRegistered;
 use App\Http\Requests\StorePatientRequest;
 use App\Models\Patient;
 
@@ -19,6 +20,8 @@ class PatientController extends Controller
                 'phone' => $validated['phone'],
                 'document_photo' => $path,
             ]);
+
+            event(new PatientRegistered($patient));
 
             return response()->json([
                 'message' => 'Patient registered successfully.',
