@@ -46,29 +46,32 @@ I used a postman collection to facilitate testing. To ensure all file uploads in
 ### 3. Verify File References
 - When running requests that require file uploads, ensure the file names in the Postman request match the actual file names in the working directory.
 
-## **Development Notes**
+## Development Notes
 
-### **Key Decisions**
-1. **Timestamps in the Database**  
+### Key Decisions
+1. Timestamps in the Database
    - Timestamps are used in the database purely for logging purposes, allowing for tracking of record creation and updates.
 
-2. **Default Files**  
+2. Default Files 
    - Some default Laravel files were retained(though they are not needed) to ensure compatibility and to expedite development.
 
-3. **Unique Email Validation**  
+3. Unique Email Validation
    - The email field in the `patients` table was set to be unique to prevent duplicate registrations.
 
-4. **Photo Storage Location**  
+4. Photo Storage Location  
    - Uploaded photos are stored in the following directory:
      ```
      patient-registration/storage/app/public/documents
      ```
 
-5. **Event-Based Notification System**  
+5. Event-Based Notification System  
    - An event is triggered each time a new patient is registered.  
    - The `PatientRegisteredEmailNotification` listener asynchronously sends a confirmation email upon event dispatch.  
    - The system is designed to be easily extendable. For example, adding SMS notifications is as simple as attaching another listener to the same event.
 
-6. **Queue Worker for Asynchronous Tasks**  
+6. Queue Worker for Asynchronous Tasks
    - A queue worker was implemented to handle the email notification process asynchronously, ensuring the application remains responsive during user registration.
+
+### Proof of work
+![Screenshot 2024-12-11 135348](https://github.com/user-attachments/assets/258540f1-2c22-4229-b324-150bbcea41d0)
 
