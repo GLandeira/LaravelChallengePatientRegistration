@@ -7,8 +7,10 @@ use App\Notifications\PatientRegisteredEmailNotification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
-class SendPatientEmailNotification
+class SendPatientEmailNotification implements ShouldQueue
 {
+    use InteractsWithQueue;
+
     /**
      * Create the event listener.
      */

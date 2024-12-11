@@ -29,6 +29,29 @@ services:
             - sail
         depends_on:
             - mysql
+    worker:
+        build:
+            context: './vendor/laravel/sail/runtimes/8.4'
+            dockerfile: Dockerfile
+            args:
+                WWWGROUP: '${WWWGROUP}'
+        image: 'sail-8.4/app'
+        environment:
+            WWWUSER: '${WWWUSER}'
+            LARAVEL_SAIL: 1
+        env_file:
+            - .env
+        volumes:
+            - '.:/var/www/html'
+        entrypoint: >
+            /bin/bash -c "chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache &&
+                          chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache &&
+                          php artisan queue:work --tries=3"
+        user: 'www-data'
+        networks:
+            - sail
+        depends_on:
+            - laravel.test
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
