@@ -1,0 +1,1690 @@
+{
+	"info": {
+		"_postman_id": "b4169527-29cf-4fb2-ae88-f22aad34bef3",
+		"name": "LaravelProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17253182"
+	},
+	"item": [
+		{
+			"name": "First User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara1234@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "First User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Chiara Zottin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "chiara1234@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+1-587-530-2271",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:22:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Patient registered successfully.\",\n    \"patient\": {\n        \"name\": \"Chiara Zottin\",\n        \"email\": \"chiara1234@gmail.com\",\n        \"phone\": \"+1-587-530-2271\",\n        \"document_photo\": \"documents/7S86kLYhlWaHtIclUTq8dTEYLfIFiJWFqkIvyihk.png\",\n        \"updated_at\": \"2024-12-11T17:22:00.000000Z\",\n        \"created_at\": \"2024-12-11T17:22:00.000000Z\",\n        \"id\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Second User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara12345@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Second User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Alice Johnson\t",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "alice.johnson@example.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+15555555555",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:23:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Patient registered successfully.\",\n    \"patient\": {\n        \"name\": \"Alice Johnson\",\n        \"email\": \"alice.johnson@example.com\",\n        \"phone\": \"+15555555555\",\n        \"document_photo\": \"documents/jsTNOCeB9ADEbz8yDMlRArn3sTiUD3lNXqwdeFwp.png\",\n        \"updated_at\": \"2024-12-11T17:23:12.000000Z\",\n        \"created_at\": \"2024-12-11T17:23:12.000000Z\",\n        \"id\": 2\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Third User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara123456@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Second User Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Charlie Brown\t",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "charlie.brown@example.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+15555556789\t",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:23:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Patient registered successfully.\",\n    \"patient\": {\n        \"name\": \"Charlie Brown\",\n        \"email\": \"charlie.brown@example.com\",\n        \"phone\": \"+15555556789\",\n        \"document_photo\": \"documents/thOFg9krAKL9bcLKRRqmCma9RmalhklC4B7fsmg9.png\",\n        \"updated_at\": \"2024-12-11T17:23:40.000000Z\",\n        \"created_at\": \"2024-12-11T17:23:40.000000Z\",\n        \"id\": 3\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Fourth User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara1234567@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Second User Copy 2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Diana Prince",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "diana.prince@example.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+15555559876",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:24:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Patient registered successfully.\",\n    \"patient\": {\n        \"name\": \"Diana Prince\",\n        \"email\": \"diana.prince@example.com\",\n        \"phone\": \"+15555559876\",\n        \"document_photo\": \"documents/Watv3M6HY1rzc2cUqPzLBL2eUaC78EWK7PXyXR3N.png\",\n        \"updated_at\": \"2024-12-11T17:24:01.000000Z\",\n        \"created_at\": \"2024-12-11T17:24:01.000000Z\",\n        \"id\": 4\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Fifth User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara1234567@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Fourth User Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Edward Cullen",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "edward.cullen@example.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+15555554321",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:24:44 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Patient registered successfully.\",\n    \"patient\": {\n        \"name\": \"Edward Cullen\",\n        \"email\": \"edward.cullen@example.com\",\n        \"phone\": \"+15555554321\",\n        \"document_photo\": \"documents/Cz7vN6PeiYzM9Ks4rGj7y9n7h3NPh6g7vUepJya9.png\",\n        \"updated_at\": \"2024-12-11T17:24:43.000000Z\",\n        \"created_at\": \"2024-12-11T17:24:43.000000Z\",\n        \"id\": 5\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Missing Required Fields",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Missing Required Fields",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:24:53 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The name field is required. (and 3 more errors)\",\n    \"errors\": {\n        \"name\": [\n            \"The name field is required.\"\n        ],\n        \"email\": [\n            \"The email field is required.\"\n        ],\n        \"phone\": [\n            \"The phone number field is required.\"\n        ],\n        \"document_photo\": [\n            \"A document photo is required.\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Invalid Email Format",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anotheremail",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Invalid Email Format",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Chiara Zottin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "anotheremail",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+1-587-530-2271",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:24:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Please provide a valid email address.\",\n    \"errors\": {\n        \"email\": [\n            \"Please provide a valid email address.\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Invalid Phone Number Format",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1111111abc",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Invalid Phone Number Format",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Chiara Zottin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "chiara123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "1111111abc",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:25:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The phone number must be a valid US phone number format.\",\n    \"errors\": {\n        \"phone\": [\n            \"The phone number must be a valid US phone number format.\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Exceeding Field Length Limits",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Muy laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara12@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Exceeding Field Length Limits",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Muy laaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaargoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "chiara12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+1-587-530-2271",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:25:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The name field must not be greater than 255 characters.\",\n    \"errors\": {\n        \"name\": [\n            \"The name field must not be greater than 255 characters.\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Invalid Image Format",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara12@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "a.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Invalid Image Format",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Chiara Zottin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "chiara12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+1-587-530-2271",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "a.txt"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:25:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The uploaded file must be an image. (and 1 more error)\",\n    \"errors\": {\n        \"document_photo\": [\n            \"The uploaded file must be an image.\",\n            \"Only JPG, JPEG, and PNG formats are allowed.\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Image Exceeds File Size Limit",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara12@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "largeImage.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Image Exceeds File Size Limit",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Chiara Zottin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "chiara12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+1-587-530-2271",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "largeImage.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:25:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The document photo must not exceed 2MB in size.\",\n    \"errors\": {\n        \"document_photo\": [\n            \"The document photo must not exceed 2MB in size.\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Duplicate Email (Use the allowed ones first))",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chiara Zottin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chiara1234@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+1-587-530-2271",
+							"type": "text"
+						},
+						{
+							"key": "document_photo",
+							"type": "file",
+							"src": "examplePic.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Duplicate Email (Use the allowed ones first))",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Chiara Zottin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "chiara1234@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+1-587-530-2271",
+									"type": "text"
+								},
+								{
+									"key": "document_photo",
+									"type": "file",
+									"src": "examplePic.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/api/patients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.4.1"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 17:25:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"This email is already registered.\",\n    \"errors\": {\n        \"email\": [\n            \"This email is already registered.\"\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
